@@ -33,10 +33,18 @@ namespace Recursividad
             
             if(int.TryParse(tbFactorial.Text.Trim(), out int result))
             {
-                Recursiva recursiva = new Recursiva();
-                recursiva.numero = result;
+                if (result <= 0)
+                {
+                    MessageBox.Show("El número debe ser mayor o igual a cero", "ERROR", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+                else
+                {
+                    Recursiva recursiva = new Recursiva();
+                    recursiva.numero = result;
 
-                lbFactorial.Text = recursiva.Factorial(recursiva.numero).ToString();
+                    lbFactorial.Text = recursiva.Factorial(recursiva.numero).ToString();
+                }
             }
             else
             {
@@ -50,9 +58,17 @@ namespace Recursividad
         {
             if(int.TryParse(tbFibonacci.Text.Trim(), out int result))
             {
-                Recursiva recursiva = new Recursiva();
-                recursiva.numero = result;
-                lbFibonacci.Text = recursiva.Fibonacci(recursiva.numero).ToString();
+                if (result < 0)
+                {
+                    MessageBox.Show("El número debe ser mayor o igual a cero", "ERROR", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+                else
+                {
+                    Recursiva recursiva = new Recursiva();
+                    recursiva.numero = result;
+                    lbFibonacci.Text = recursiva.Fibonacci(recursiva.numero).ToString();
+                }
             }
             else
             {
@@ -81,12 +97,21 @@ namespace Recursividad
             if(int.TryParse(tbMcd1.Text.Trim(), out int result1) && 
                 int.TryParse(tbMcd2.Text.Trim(), out int result2))
             {
-                Recursiva recurisiva = new Recursiva();
+                if (result1 <= 0 || result2 <= 0)
+                {
+                    MessageBox.Show("El número debe ser mayor o igual a cero", "ERROR", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+                else
+                {
+                    Recursiva recurisiva = new Recursiva();
 
-                recurisiva.numero = result1;
-                recurisiva.numero2 = result2;
+                    recurisiva.numero = result1;
+                    recurisiva.numero2 = result2;
 
-                lbMcd.Text = recurisiva.MaximoComunDivisor(recurisiva.numero, recurisiva.numero2).ToString();
+                    lbMcd.Text = recurisiva.MaximoComunDivisor(recurisiva.numero, recurisiva.numero2).ToString();
+
+                }
             }
             else
             {
