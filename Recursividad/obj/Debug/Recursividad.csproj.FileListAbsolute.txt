@@ -1,0 +1,10 @@
+C:\Users\jafet\Desktop\Recursividad\Recursividad\bin\Debug\Recursividad.exe.config
+C:\Users\jafet\Desktop\Recursividad\Recursividad\bin\Debug\Recursividad.exe
+C:\Users\jafet\Desktop\Recursividad\Recursividad\bin\Debug\Recursividad.pdb
+C:\Users\jafet\Desktop\Recursividad\Recursividad\obj\Debug\Recursividad.csproj.AssemblyReference.cache
+C:\Users\jafet\Desktop\Recursividad\Recursividad\obj\Debug\Recursividad.Form1.resources
+C:\Users\jafet\Desktop\Recursividad\Recursividad\obj\Debug\Recursividad.Properties.Resources.resources
+C:\Users\jafet\Desktop\Recursividad\Recursividad\obj\Debug\Recursividad.csproj.GenerateResource.cache
+C:\Users\jafet\Desktop\Recursividad\Recursividad\obj\Debug\Recursividad.csproj.CoreCompileInputs.cache
+C:\Users\jafet\Desktop\Recursividad\Recursividad\obj\Debug\Recursividad.exe
+C:\Users\jafet\Desktop\Recursividad\Recursividad\obj\Debug\Recursividad.pdb
