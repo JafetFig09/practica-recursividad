@@ -99,6 +99,7 @@
             this.tbFactorial.Name = "tbFactorial";
             this.tbFactorial.Size = new System.Drawing.Size(93, 22);
             this.tbFactorial.TabIndex = 1;
+            this.tbFactorial.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
@@ -155,6 +156,7 @@
             this.tbFibonacci.Name = "tbFibonacci";
             this.tbFibonacci.Size = new System.Drawing.Size(116, 22);
             this.tbFibonacci.TabIndex = 1;
+            this.tbFibonacci.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -203,6 +205,7 @@
             this.tbMcd2.Name = "tbMcd2";
             this.tbMcd2.Size = new System.Drawing.Size(86, 22);
             this.tbMcd2.TabIndex = 3;
+            this.tbMcd2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label4
             // 
@@ -219,6 +222,7 @@
             this.tbMcd1.Name = "tbMcd1";
             this.tbMcd1.Size = new System.Drawing.Size(77, 22);
             this.tbMcd1.TabIndex = 1;
+            this.tbMcd1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 

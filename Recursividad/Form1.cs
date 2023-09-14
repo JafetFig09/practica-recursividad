@@ -30,19 +30,36 @@ namespace Recursividad
 
         private void btnCalcularFactorial_Click(object sender, EventArgs e)
         {
-            Recursiva recursiva = new Recursiva();
+            
+            if(int.TryParse(tbFactorial.Text.Trim(), out int result))
+            {
+                Recursiva recursiva = new Recursiva();
+                recursiva.numero = result;
 
-            recursiva.numero = Convert.ToInt32(tbFactorial.Text.Trim());
-
-            lbFactorial.Text = recursiva.Factorial(recursiva.numero).ToString();
+                lbFactorial.Text = recursiva.Factorial(recursiva.numero).ToString();
+            }
+            else
+            {
+                MessageBox.Show("No se acetan caracteres","ERROR",MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
 
         }
 
         private void btnCalcularFibonacci_Click(object sender, EventArgs e)
         {
-            Recursiva recursiva=new Recursiva();
-            recursiva.numero = Convert.ToInt32(tbFibonacci.Text.Trim());
-            lbFibonacci.Text = recursiva.Fibonacci(recursiva.numero).ToString();
+            if(int.TryParse(tbFibonacci.Text.Trim(), out int result))
+            {
+                Recursiva recursiva = new Recursiva();
+                recursiva.numero = result;
+                lbFibonacci.Text = recursiva.Fibonacci(recursiva.numero).ToString();
+            }
+            else
+            {
+                MessageBox.Show("No se acetan caracteres", "ERROR", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+
         }
 
         private void Fibonacci_Click(object sender, EventArgs e)
@@ -61,12 +78,22 @@ namespace Recursividad
 
         private void btnCalcularMcd_Click(object sender, EventArgs e)
         {
-            Recursiva recurisiva = new Recursiva();
+            if(int.TryParse(tbMcd1.Text.Trim(), out int result1) && 
+                int.TryParse(tbMcd2.Text.Trim(), out int result2))
+            {
+                Recursiva recurisiva = new Recursiva();
 
-            recurisiva.numero = Convert.ToInt32(tbMcd1.Text.Trim());
-            recurisiva.numero2 = Convert.ToInt32(tbMcd2.Text.Trim());
+                recurisiva.numero = result1;
+                recurisiva.numero2 = result2;
 
-            lbMcd.Text = recurisiva.MaximoComunDivisor(recurisiva.numero, recurisiva.numero2).ToString();
+                lbMcd.Text = recurisiva.MaximoComunDivisor(recurisiva.numero, recurisiva.numero2).ToString();
+            }
+            else
+            {
+                MessageBox.Show("No se acetan caracteres", "ERROR", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+
         }
     }
 }
